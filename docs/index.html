@@ -15172,10 +15172,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Class-Activation-Maps-(CAM)">Class Activation Maps (CAM)<a class="anchor-link" href="#Class-Activation-Maps-(CAM)">&#182;</a></h2><ul>
 <li><strong>CAM-Based</strong> explanation provide visual explanation for a single input with a linear weighted combination of activation maps from convolutional layers. CAM creates localized visual explanations but is architecturesensitive, a global pooling layer is required to follow the convolutional layer of interest.</li>
-<li><strong>Grad-CAM</strong> and its variations,e.g. Grad-CAM++ , intend to generalize CAM tomodels without global pooling layers and finally adopted widely in the community.</li>
-<li><strong>Score-CAM</strong> explanation method: the importance of activation maps are encoded by the global contribution of the corresponding input features instead of the local sensitivity measurement (a.k.a gradient information). <strong>Score-CAM</strong> gets rid of the dependence on gradients by obtaining the weight of each activation map through its forward passing score on target class, the final result is obtained by a linear combination of weights and activation</li>
+<li><strong>Grad-CAM</strong> and its variations,e.g. Grad-CAM++ , intend to generalize CAM for models without global pooling layers and finally adopted widely in the community.</li>
+<li><strong>Score-CAM</strong> explanation method: the importance of activation maps are encoded by the global contribution of the corresponding input features instead of the local sensitivity measurement (a.k.a gradient information). <strong>Score-CAM</strong> gets rid of the dependence on gradients by obtaining the weight of each activation map through its forward passing score on target class, the final result is obtained by a linear combination of weights and activation maps. The authors of [1] demonstrated that Score-CAM achieves better visual performance and fairness for interpreting the decision making process.</li>
 </ul>
-<p>maps. The authors of [1] demonstrated that Score-CAM achieves better visual performance and fairness for interpreting the decision making process.</p>
 
 </div>
 </div>
